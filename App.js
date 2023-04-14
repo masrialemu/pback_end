@@ -23,11 +23,12 @@ app.use('/get',Get)
 app.use("/mail",Mail)
 // app.use('/update',Post)
 // app.use('/delete',Post)
+//jjjjjjjj
 // app.use('/login',Post)
 
 
 
 
 app.listen(process.env.Port || 5000,(req,res)=>{
-    console.log('the port is working now')
+    console.log('The port is working now')
 })
