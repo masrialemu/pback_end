@@ -1,0 +1,78 @@
+const mongoose = require('mongoose');
+let Schema = mongoose.Schema;
+const userSchema = new Schema({
+     bg:{
+        burl:{type:String},
+        burl_id:{type:String}
+     },
+     name:{
+        n1:{type:String},
+        n2:{type:String},
+        n3:{type:String},
+        n4:{type:String}
+     },
+     about:{
+        aurl:{type:String},
+        aurl_id:{type:String},
+        def:{type:String},
+     },
+     about_nm:{
+        anm1:{type:String},
+        anm2:{type:String},
+        anm3:{type:String},
+        anm4:{type:String},
+        anm5:{type:String},
+        anm6:{type:String},
+        anm7:{type:String},
+        anm8:{type:String},
+     },
+     skill:{
+        html:{type:String},
+        nhtml:{type:Number},
+        css:{type:String},
+        ncss:{type:Number},
+        js:{type:String},
+        njs:{type:Number},
+        react:{type:String},
+        nreact:{type:Number},
+        boot:{type:String},
+        nboot:{type:Number},
+        reactn:{type:String},
+        nreactn:{type:Number},
+        node:{type:String},
+        nnode:{type:Number},
+        cpp:{type:String},
+        ncpp:{type:Number},
+        mongo:{type:String},
+        nmongo:{type:Number},
+        fb:{type:String},
+        nfb:{type:Number},
+        php:{type:String},
+        nphp:{type:Number},
+        java:{type:String},
+        njava:{type:Number},
+     },
+     portfolio:{
+        purl:{type:String},
+        purl_id:{type:String},
+        name:{type:String},
+        time:{type:String},
+        git:{type:String},
+        live:{type:String}
+     },
+     service:{
+        stitle:{type:String},
+        desc:{type:String}
+     },
+     social:{
+        link:{type:String}
+     },
+     msg:{
+        email:{type:String},
+        mtitle:{type:String},
+        message:{type:String}
+     }
+
+},{timestamps:true})
+const User = mongoose.model('AllData', userSchema);
+module.exports = User;
